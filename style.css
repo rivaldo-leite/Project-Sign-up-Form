@@ -1,0 +1,58 @@
+html {
+    height: 100vh;
+    width: 100vw;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    width: 75vw;
+    background-color: aquamarine;
+}
+
+.image {
+    height: 100vh;
+    width: 30vw;
+}
+
+.aurora-img {
+    height: 100vh;
+    width: 30vw;
+}
+
+.form {
+    display: flex;
+    gap: 20px;
+}
+
+.firstCol {
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+}
+
+.secondCol {
+    display: flex;
+    flex-direction: column;
+    width: 15vw;
+}
+
+
+
+
+
+
+
+
+
