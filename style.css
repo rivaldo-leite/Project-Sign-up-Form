@@ -1,6 +1,8 @@
 html {
-    height: 100vh;
-    width: 100vw;
+    width: 100%;
+    height: 100%;
+    font-family: 'Young Serif', serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -16,24 +18,62 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100vh;
     width: 75vw;
-    background-color: aquamarine;
+    min-height: 100vh;
+    background-color: #052598;
 }
 
-.image {
-    height: 100vh;
-    width: 30vw;
+image {
+    min-height: 100%;
+}
+
+.aurora-logo {
+    position: absolute;
+    top: 16vh;
+    
+    height: 10vh;
+    width: auto;
+}
+
+.logo-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 12.1vh;
+    left: 40vh;
+    bottom: 200px;
+    height: 10.1vh;
+    width: 23.2vw;
+    background-color: #000928;
+    color: #6e38ee;
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.credit {
+    position: absolute;
+    bottom: 1vh;
+    left: 325px;
+    color: white;
+    font-size: 10px;
 }
 
 .aurora-img {
-    height: 100vh;
+    min-height: 100vh;
     width: 30vw;
 }
 
 .form {
+    margin-top: 30px;
     display: flex;
+    flex-direction: column;
     gap: 20px;
+}
+
+.input-fields {
+    display: flex;
+    gap: 35px;   
 }
 
 .firstCol {
@@ -46,6 +86,74 @@ body {
     display: flex;
     flex-direction: column;
     width: 15vw;
+}
+
+
+a {
+    color: white;
+    text-decoration-color: white;
+}
+
+.info {
+    
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.text {
+    font-size: 17px;
+}
+
+.text-title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-decoration-line: underline;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+#createAccount {
+    width: 140px;
+    height: 40px;
+    background-color: white;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#createAccount:hover {
+    background-color: black;
+    color: white;
+}
+
+form input {
+    border: 2px solid #E5E7EB;
+    height: 20px;
+    margin-bottom: 8px;
+}
+
+
+.log-in {
+    font-weight: bold;
+    color: white;
+    
+    text-decoration-line: none;
+}
+
+.input-fields input:focus {
+    border: 3px solid greenyellow;
 }
 
 

@@ -4,45 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Young+Serif&display=swap" rel="stylesheet">
     <title>Sign-up Form</title>
 </head>
 <body>
     <div class="container">
         <div class="image">
             <div class="title">
-                <img src="aurora-logo.jpg" alt="Aurora Logo" width="40px" height="40px">
-                <p>Aurora Borealis</p>
+                <div class="logo">
+                    <img class="aurora-logo" src="aurora-logo.jpg" alt="Aurora Logo">
+                    <p class="logo-text">Aurora Borealis</p>
+                </div>
+                <img class="aurora-img" src="backgroundImage.jpg" alt="Aurora Borealis">
+                <p class="credit">Photo by <a href="https://unsplash.com/pt-br/@johnygoerend" target="_blank">Johny Goerend</a> on <a href="https://unsplash.com/pt-br/fotografias/U_diPCXCBxU" target="_blank">Unsplash</a></p>
             </div>
-            <img class="aurora-img" src="backgroundImage.jpg" alt="Aurora Borealis">
-            <p>Photo by <a href="https://unsplash.com/pt-br/@johnygoerend" target="_blank">Johny Goerend</a> on <a href="https://unsplash.com/pt-br/fotografias/U_diPCXCBxU" target="_blank">Unsplash</a></p>
         </div>
         <div class="info">
-            <div class="text"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Asperiores ex, iste velit nesciunt nisi praesentium pariatur quasi excepturi unde aliquid id amet quae delectus nam incidunt accusantium ipsam accusamus consectetur.</p></div>
+            <div class="text">
+                <p class="text-title">Experience the Northern Lights Adventure</p>
+                <p>
+                Embark on an unforgettable journey to witness the mesmerizing Aurora Borealis, a natural wonder that will leave you awestruck. Our carefully curated Northern Lights package offers an enchanting escapade into the heart of the Arctic Circle, where you'll have the opportunity to witness the magical dance of the Northern Lights in all its glory.
+                </p>
+                <p>Join us for an Arctic journey like no other and let the Northern Lights illuminate your soul. Book your spot on this once-in-a-lifetime experience today!</p>
+            </div>
             <div class="sign-up">
                 <form class="form" action="">
-                    <div class="firstCol">
-                        <label for="fname">First Name</label>
-                        <input type="text" id="fname" name="fname">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="email">
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password">
+                    <div class="input-fields">
+                        <div class="firstCol">
+                            <label for="fname">First Name</label>
+                            <input type="text" id="fname" name="fname" required>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <div class="secondCol">
+                            <label for="lname">Last Name</label>
+                            <input type="text" id="lname" name="lname" required>
+                            <label for="phone-number">Phone Number</label>
+                            <input type="text" id="phone-number" name="phone-number" required>
+                            <label for="cPassword">Confirm Password</label>
+                            <input type="password" id="cPassword" name="cPassword" required>
+                        </div>
                     </div>
-                    <div class="secondCol">
-                        <label for="lname">Last Name</label>
-                        <input type="text" id="lname" name="lname">
-                        <label for="phone-number">Phone Number</label>
-                        <input type="text" id="phone-number" name="phone-number">
-                        <label for="cPassword">Confirm Password</label>
-                        <input type="password" id="cPassword" name="cPassword">
+                    <div class="button">
+                        <label for="createAccount"></label>
+                        <input type="submit" id="createAccount" value="Create Account">
+                        <p>Already have an account? <a class="log-in" href="#">Log in</a></p>
                     </div>
                 </form>
-            </div>
-            <div class="button">
-                <button class="createAccount">Create Account</button>
-                <p>Already have an account? <a href="#">Log in</a></p>
             </div>
         </div>
     </div>
 </body>
 </html>
+
